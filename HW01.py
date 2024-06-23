@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import sklearn.neighbors as skl
 from sklearn.neighbors import KNeighborsClassifier
 
 u1 = np.array([-1, 1]).T
@@ -105,10 +104,10 @@ def Q1_p6():
     plt.grid(True)
     plt.show()
 
+
 sample_data, sample_labels, synthetic_test_samples, actual_test_labels = create_data()
 
-Q1_p2_3(sample_data, sample_labels, synthetic_test_samples)
+#Q1_p2_3(sample_data, sample_labels, synthetic_test_samples)
 Q1_p4_5(sample_data, sample_labels, synthetic_test_samples, actual_test_labels)
 for _ in range(5):
     Q1_p6()
-    #pass
